@@ -23,6 +23,8 @@ Proyecto de e-commerce moderno desarrollado con Laravel 12, Livewire 3, Filament
 ### Frontend
 - **Tailwind CSS 4.1.18** - Framework de estilos utility-first
 - **Vite 7.0.7** - Build tool moderno
+- **Alpine.js** - Framework JavaScript ligero (incluido con Livewire)
+- **Diseño inspirado en Cosmetics Store** - UI/UX moderna y elegante
 
 ### Base de Datos
 - **MySQL 8.0+** - Base de datos relacional
@@ -31,6 +33,11 @@ Proyecto de e-commerce moderno desarrollado con Laravel 12, Livewire 3, Filament
 ### Cache y Colas
 - **Redis** (opcional) - Cache, sesiones y colas
 - Configuración alternativa con `file` y `sync` para desarrollo
+
+### Pagos
+- **Stripe** - Gateway de pagos integrado
+- **PaymentIntents** - Procesamiento seguro de pagos
+- **Webhooks** - Confirmación automática de órdenes
 
 ## 🏗️ Arquitectura
 
@@ -342,17 +349,48 @@ Toda la documentación detallada se encuentra en la carpeta `docs/`:
 - [x] Direcciones predeterminadas (Customers Domain)
 - [x] Componentes Livewire reactivos
 - [x] Action Classes para toda la lógica de negocio
+- [x] Frontend público con diseño moderno
+- [x] Sistema de carrito de compras
+- [x] Integración con Stripe
+- [x] Autenticación de clientes
+- [x] Webhooks de Stripe
+- [x] Diseño responsive y animado
+
+### ✅ Frontend Público
+
+- [x] Diseño moderno inspirado en Cosmetics Store
+- [x] Hero section con imagen de fondo y overlay
+- [x] Cards de productos animadas con efectos hover
+- [x] Sistema de navegación responsive
+- [x] Sección de características (Season Sale, Free Shipping, Money Back)
+- [x] Sección de testimonios
+- [x] Newsletter subscription
+- [x] Footer completo con información de contacto
+
+### ✅ Sistema de Carrito y Checkout
+
+- [x] Carrito de compras con Livewire 3
+- [x] Gestión de sesión de carrito (Redis/File)
+- [x] Validación de stock en tiempo real
+- [x] Checkout con Stripe Integration
+- [x] Webhooks de Stripe para confirmación de pagos
+- [x] Guest checkout (carrito sin registro)
+
+### ✅ Autenticación y Pagos
+
+- [x] Sistema multi-auth (Admin y Customer)
+- [x] Registro y login de clientes
+- [x] Integración con Stripe (PaymentIntents)
+- [x] Webhooks seguros para confirmación de órdenes
+- [x] Protección CSRF en webhooks
 
 ### 🔄 En Progreso / Pendiente
 
-- [ ] Actualizar Resources a API de Filament 4 (Schema)
-- [ ] Implementar frontend público con Livewire
-- [ ] Sistema de carrito de compras
-- [ ] Procesamiento de pagos
-- [ ] Sistema de notificaciones
 - [ ] Tests automatizados
-- [ ] Configurar rutas para componentes Livewire
-- [ ] Sistema de autenticación de clientes
+- [ ] Sistema de notificaciones por email
+- [ ] Optimización de imágenes (lazy loading)
+- [ ] SEO avanzado
+- [ ] Sistema de cupones/descuentos
 
 ## 🤝 Contribuir
 
@@ -370,7 +408,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 
 ## 👥 Autores
 
-- **Tu Nombre** - *Desarrollo inicial*
+- **Tu Nombre** - *Ramiro Núñez Valverde*
 
 ---
 
